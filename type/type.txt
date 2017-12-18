@@ -1,0 +1,3 @@
+create table type(
+tid int primary key auto_increment,
+tname varchar(50));

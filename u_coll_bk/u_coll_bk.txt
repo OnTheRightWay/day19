@@ -1,0 +1,6 @@
+create table u_coll_bk(
+uid int,
+bid int,
+constraint fk_cuid foreign key(uid) references user(uid),
+constraint fk_cbid foreign key(bid) references book(bid),
+constraint uk_ubid unique(uid,bid));

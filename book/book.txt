@@ -1,0 +1,6 @@
+create table book(
+bid int primary key auto_increment,
+bname varchar(50),
+author varchar(50),tid int,
+constraint fk_tid foreign key(tid) 
+references booktype(tid));

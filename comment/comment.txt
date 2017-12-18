@@ -1,0 +1,8 @@
+create table comment(
+cid int primary key auto_increment,
+content varchar(50),
+bid int,
+uid int,
+date varchar(50),
+constraint fk_bid foreign key(bid) references book(bid),
+constraint fk_uid foreign key(uid) references user(uid));
